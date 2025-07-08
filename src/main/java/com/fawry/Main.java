@@ -18,7 +18,7 @@ public class Main {
         }
 
         try {
-            double amount = inventory.buyBook("P001", 2, "example@mail.com", "Cairo, Egypt");
+            double amount = inventory.buyBook("P001", 10, "example@mail.com", "Cairo, Egypt");
             System.out.println("Paid amount for paper book: " + amount);
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -32,7 +32,7 @@ public class Main {
         }
 
         try {
-            inventory.buyBook("S001", 1, "eyad@mail.com", "Cairo");
+            inventory.buyBook("S001", 1, "example@mail.com", "Cairo");
         } catch (Exception e) {
             System.out.println("Error - " + e.getMessage());
         }
